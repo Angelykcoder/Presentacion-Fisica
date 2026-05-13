@@ -400,6 +400,12 @@ function Footer() {
                 Ing. Wesley Byron
               </p>
 
+
+                                 <p className="mb-0">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Mishel Archila
+              </p>
+
               <p className="mb-0">
                 <i className="bi bi-person-badge me-2 text-info"></i>
                 Ing. Justin
