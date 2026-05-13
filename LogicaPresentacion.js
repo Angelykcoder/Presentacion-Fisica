@@ -63,7 +63,7 @@ function Navbar() {
       <div className="container">
         <a className="navbar-brand" href="#inicio">
           <i className="bi bi-stars me-2 text-info"></i>
-          Física<span>Orbital</span>
+          Proyecto<span> física</span>
         </a>
 
         <button
@@ -83,15 +83,19 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="#mru">MRU/MRUV</a>
             </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#caida">Caída libre</a>
             </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#circular">Movimiento circular</a>
             </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#formulas">Fórmulas</a>
             </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#simulaciones">Simulación</a>
             </li>
@@ -147,8 +151,9 @@ function Hero() {
           </h1>
 
           <p>
-            Una página web con astros en movimiento, objetos flotantes, secciones educativas,
-            fórmulas esenciales y enlaces a simulaciones para comprender el movimiento.
+            Para aquellos que no conocen las matemáticas, es difícil sentir la belleza,
+            la profunda belleza de la naturaleza… Si quieres aprender sobre la naturaleza,
+            apreciar la naturaleza, es necesario aprender el lenguaje en el que habla.
           </p>
 
           <div className="hero-actions">
@@ -157,7 +162,7 @@ function Hero() {
             </a>
 
             <a href="#simulaciones" className="btn btn-glass">
-              Ver simulaciones
+              Ver simulador
             </a>
           </div>
         </div>
@@ -212,6 +217,7 @@ function TopicSection({ topic, index }) {
 
               <div className="mt-4">
                 <h4 className="h5">Idea clave</h4>
+
                 <p className="mb-0 text-white-50">
                   Identifica primero qué datos tienes, elige un sistema de referencia y revisa
                   las unidades antes de sustituir valores.
@@ -248,8 +254,10 @@ function FormulaSummary() {
           <div className="col-md-4">
             <div className="glass-card reveal">
               <h3 className="h4 text-info">MRU</h3>
+
               <div className="formula">v = constante</div>
               <div className="formula">x = x₀ + v·t</div>
+
               <p className="text-white-50 mb-0">
                 No hay aceleración. En tiempos iguales se recorren distancias iguales.
               </p>
@@ -259,9 +267,11 @@ function FormulaSummary() {
           <div className="col-md-4">
             <div className="glass-card reveal">
               <h3 className="h4 text-info">MRUV / gravedad</h3>
+
               <div className="formula">a = constante</div>
               <div className="formula">v = v₀ + a·t</div>
               <div className="formula">x = x₀ + v₀t + ½at²</div>
+
               <p className="text-white-50 mb-0">
                 Para caída libre se usa a = g, cuidando el signo según el eje elegido.
               </p>
@@ -271,10 +281,12 @@ function FormulaSummary() {
           <div className="col-md-4">
             <div className="glass-card reveal">
               <h3 className="h4 text-info">Circular</h3>
+
               <div className="formula">θ = θ₀ + ωt</div>
               <div className="formula">s = rθ</div>
               <div className="formula">v = ωr</div>
               <div className="formula">a꜀ = v²/r</div>
+
               <p className="text-white-50 mb-0">
                 La velocidad cambia de dirección aunque su rapidez sea constante.
               </p>
@@ -295,7 +307,9 @@ function Sources() {
 
           <p className="section-subtitle">
             Esta página reúne información de distintos materiales de estudio sobre cinemática,
-            movimiento rectilíneo, caída libre, tiro vertical y movimiento circular.
+            movimiento rectilíneo, caída libre, tiro vertical y movimiento circular. El contenido
+            fue investigado y recopilado de presentaciones brindadas por el Ing. Carlos Caballeros,
+            guía en nuestro camino hacia el descubrimiento de las leyes naturales del universo.
           </p>
 
           <div className="row g-3 mt-3">
@@ -346,12 +360,10 @@ function Simulations() {
                 href="https://simuladorfisica1.netlify.app/"
                 rel="noreferrer"
               >
-              SIMULADOR FÍSICA
+                SIMULADOR FÍSICA
                 <i className="bi bi-box-arrow-up-right ms-2"></i>
               </a>
             </div>
-
-          
           </div>
         </div>
       </div>
@@ -366,19 +378,39 @@ function Footer() {
         <div className="footer-presentation">
           <div className="row align-items-center g-4">
             <div className="col-lg-8">
-              <h2 className="fw-bold mb-2">Presentación final: Física en movimiento</h2>
+              <h2 className="fw-bold mb-3">Creado por grupo Bellakos UMG</h2>
 
-              <p className="text-white-50 mb-0">
-                Orden de exposición: MRU/MRUV → Caída libre y tiro vertical → Movimiento circular.
-                El contenido fue organizado a partir de distintos documentos de física, fórmulas de
-                cinemática, explicaciones teóricas y simulaciones educativas.
+              <p className="mb-1">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Diego Flores
+              </p>
+
+              <p className="mb-1">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Leandro Perez
+              </p>
+
+              <p className="mb-1">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Luis Sanchez
+              </p>
+
+              <p className="mb-1">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Wesley Byron
+              </p>
+
+              <p className="mb-0">
+                <i className="bi bi-person-badge me-2 text-info"></i>
+                Ing. Justin
               </p>
             </div>
 
             <div className="col-lg-4 text-lg-end">
-              <p className="mb-1">
-                <i className="bi bi-person-video3 me-2 text-info"></i>
-                Proyecto web educativo
+              <h3 className="h5 text-info mb-2">Universidad Mariano Gálvez</h3>
+
+              <p className="mb-0 text-white-50">
+                Proyecto web educativo de Física 1
               </p>
 
               <p className="mb-0 text-white-50">
@@ -389,7 +421,9 @@ function Footer() {
         </div>
 
         <div className="text-center mt-4 text-white-50">
-          <small>© 2026 FísicaOrbital. Diseñado para aprender cinemática de forma visual.</small>
+          <small>
+            © 2026 ProyectoFisicaFYK. Diseñado para aprender cinemática de forma visual.
+          </small>
         </div>
       </div>
     </footer>
@@ -448,7 +482,10 @@ function scrollProgress() {
 function asteroidParallax() {
   document.querySelectorAll(".asteroid").forEach((asteroid, index) => {
     const speed = 0.03 + index * 0.015;
-    asteroid.style.transform = `translateY(${window.scrollY * speed}px) rotate(${window.scrollY * 0.025}deg)`;
+
+    asteroid.style.transform = `translateY(${window.scrollY * speed}px) rotate(${
+      window.scrollY * 0.025
+    }deg)`;
   });
 }
 
